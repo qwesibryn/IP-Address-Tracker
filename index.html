@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Address Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+</head>
+<body>
+  <div class="container">
+    <h1>IP Address Tracker</h1>
+    <div class="tracker">
+      <input type="text" id="ipInput" placeholder="Enter IP Address or Domain">
+      <button id="trackBtn">Track</button>
+    </div>
+    <div class="results">
+      <p><strong>IP:</strong> <span id="ip"></span></p>
+      <p><strong>Location:</strong> <span id="location"></span></p>
+      <p><strong>ISP:</strong> <span id="isp"></span></p>
+      <p><strong>Timezone:</strong> <span id="timezone"></span></p>
+    </div>
+  </div>
+  <div id="map"></div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alex Arthur</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
